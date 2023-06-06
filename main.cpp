@@ -21,7 +21,7 @@ bool var(char s) {
 
 int main() {
     Variable x = Variable();
-    int var;
+    float var;
     cout << "Please enter a number in the decimal system: " << endl;
     cin >> var;
     x.val = var;
