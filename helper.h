@@ -30,4 +30,5 @@ Node* subtract(Node* left, Node* right);
 Node* Multiply(Node* left, Node* right);
 Node* Divide(Node* left, Node* right);
 Node* exponential(Node* left, Node* right);
+Node* differentiate(Node* left, Node* right);
 #endif //CALCULATOR_HELPER_H

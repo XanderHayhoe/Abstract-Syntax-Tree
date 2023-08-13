@@ -7,17 +7,20 @@ using namespace std;
 
 // determine if these are branches or nodes in the AST
 bool operation(char op) {
-    if (op == '+' || op == '-' || op == '*' || op == '/' || op == '^' || op == '(' || op == ')')
+    if (op == '+' || op == '-' || op == '*' || op == '/' || op == '^' || op == '(' || op == ')') {
         return true;
+    }
     return false;
 }
 bool var(char s) {
-    if (operation(s) == false)
+    if (operation(s) == false) {
         return true;
+    }
     return false;
 }
-// ostream operator overload
-
+bool number(char s) {
+    return !operation(s) && var(s);
+}
 
 int main() {
     Variable x = Variable();

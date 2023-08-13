@@ -49,3 +49,6 @@ Node* exponential(Node* left, Node* right) {
     product->var.val = pow(stof(left->var.val), stof(right->var.val));
     return product;
 }
+Node* differentiate(Node* left, Node* right) {
+    // do symbolic math, later tho
+}
